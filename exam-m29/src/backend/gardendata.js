@@ -1,19 +1,19 @@
 const gardenData = [
     {
-        "fák": [{ "név": "cseresznye", "virágzás ideje": "április", "virág színe": "rózsaszín", "virág illata" : "semmilyen"},
-        { "név": "szilva", "virágzás ideje": "április", "virág színe": "rózsaszín", "virág illata" : "illatos"},
-        { "név": "mandula", "virágzás ideje": "március", "virág színe": "fehér", "virág illata" : "illatos"},
-        { "név": "alma", "virágzás ideje": "május", "virág színe": "rózsaszín", "virág illata" : "illatos"}]
+        ptype: "fák", species: [{ name: "cseresznye", month: "április", color: "rózsaszín", scent: "semmilyen" },
+        { name: "szilva", month: "április", color: "rózsaszín", scent: "illatos" },
+        { name: "mandula", month: "március", color: "fehér", scent: "illatos" },
+        { name: "alma", month: "május", color: "rózsaszín", scent: "illatos" }]
     }, {
-        "bokrok": [{ "név": "hóbogyó", "virágzás ideje": "november", "virág színe": "fehér", "virág illata": "semmilyen" },
-            { "név": "varjúháj", "virágzás ideje": "április", "virág színe": "sárga", "virág illata": "büdös" },
-            { "név": "orgona", "virágzás ideje": "május", "virág színe": "lila", "virág illata": "isteni" },
-            { "név": "tűztövis", "virágzás ideje": "április", "virág színe": "piros", "virág illata" : "semmilyen"}]
+        ptype: "bokrok", species: [{ name: "hóbogyó", month: "november", color: "fehér", scent: "semmilyen" },
+        { name: "varjúháj", month: "április", color: "sárga", scent: "büdös" },
+        { name: "orgona", month: "május", color: "lila", scent: "isteni" },
+        { name: "tűztövis", month: "április", color: "piros", scent: "semmilyen" }]
     },
     {
-        "viragok": [{ "név": "hóvirág", "virágzás ideje": "február", "virág színe": "fehér", "virág illata": "büdös" },
-            { "név": "jácint", "virágzás ideje": "március", "virág színe": "lila", "virág illata": "isteni" },
-            { "név": "nárcisz", "virágzás ideje": "április", "virág színe": "sárga", "virág illata": "semmilyen" },
-            { "név": "tulipán", "virágzás ideje": "április", "virág színe": "piros", "virág illata" : "semmilyen"}]
+        ptype: "virágok", species: [{ name: "hóvirág", month: "február", color: "fehér", scent: "büdös" },
+        { name: "jácint", month: "március", color: "lila", scent: "isteni" },
+        { name: "nárcisz", month: "április", color: "sárga", scent: "semmilyen" },
+        { name: "tulipán", month: "április", color: "piros", scent: "semmilyen" }]
     }
 ]
