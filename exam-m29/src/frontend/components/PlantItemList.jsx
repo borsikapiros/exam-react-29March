@@ -16,24 +16,26 @@ export default function PlantItemList(props) {
         setColorSearchTerm(event.target.value);
     };
 
-    function filterSpecies(species) {
-        if (
-            species.month === monthSearchTerm &&
-            species.color === colorSearchTerm
-        )
-            return true;
-    }
+    useEffect(() => {
+        function filterSpecies(spec) {
+            if (
+                spec.month === monthSearchTerm &&
+                spec.color === colorSearchTerm
+            )
+                return true;
+        }
+        const resultArray = species.filter(filterSpecies);
+        setSearchResults(resultArray);
+    }, [monthSearchTerm, colorSearchTerm]);
 
-    useEffect(
-        (filterSpecies, species) => {
-            const resultArray = species.filter(filterSpecies);
-            setSearchResults(resultArray);
-        },
-        [monthSearchTerm, colorSearchTerm]
-    );
+    console.log(searchResults);
 
     const renderedSpeciesArray = searchResults.map((specimen) => {
-        return <PlantItem specimen={specimen} />;
+        if (!specimen) {
+            return "Bocs, ilyen növény nincs, próbálj más keresést";
+        } else {
+            return <PlantItem specimen={specimen} />;
+        }
     });
 
     return (
@@ -51,23 +53,30 @@ export default function PlantItemList(props) {
                     <label htmlFor="month">
                         Válaszd ki a virágzás hónapját:
                     </label>
-                    <input
-                        type="text"
-                        placeholder="Kezdj el gépelni"
-                        value={monthSearchTerm}
+                    <select
+                        id="monthselect"
+                        name="month"
                         onChange={handleMonthChange}
-                    ></input>
+                    >
+                        <option value="február">február</option>
+                        <option value="március">március</option>
+                        <option value="április">április</option>
+                        <option value="május">május</option>
+                    </select>
                 </div>
                 <div className="search">
-                    <label htmlFor="color">
-                        Válaszd ki, milyen színű virágra vagy kíváncsi:
-                    </label>
-                    <input
-                        type="text"
-                        placeholder="Kezdj el gépelni"
-                        value={colorSearchTerm}
+                    <label htmlFor="color">Válaszd ki a virág színét:</label>
+                    <select
+                        id="colorselect"
+                        name="color"
                         onChange={handleColorChange}
-                    ></input>
+                    >
+                        <option value="fehér">fehér</option>
+                        <option value="piros">piros</option>
+                        <option value="rózsaszín">rózsaszín</option>
+                        <option value="sárga">sárga</option>
+                        <option value="lila">lila</option>
+                    </select>
                 </div>
             </div>
             <ul>{renderedSpeciesArray}</ul>
