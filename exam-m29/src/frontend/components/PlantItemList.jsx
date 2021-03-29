@@ -31,12 +31,13 @@ export default function PlantItemList(props) {
     console.log(searchResults);
 
     const renderedSpeciesArray = searchResults.map((specimen) => {
-        if (specimen === null) {
-            return "Bocs, ilyen növény nincs, próbálj más keresést";
-        } else {
-            return <PlantItem specimen={specimen} />;
-        }
+        return <PlantItem specimen={specimen} />;
     });
+
+    const renderedSpecies =
+        renderedSpeciesArray.length === 0
+            ? "Bocs, ilyen növény nincs, próbálj más keresést"
+            : renderedSpeciesArray;
 
     return (
         <div className="plantitemlist-container">
@@ -77,7 +78,7 @@ export default function PlantItemList(props) {
                     </select>
                 </div>
             </div>
-            <div className="species-container">{renderedSpeciesArray}</div>
+            <div className="species-container">{renderedSpecies}</div>
         </div>
     );
 }
