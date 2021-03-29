@@ -23,7 +23,7 @@ export default function PlantTypeItem(props) {
         clicked === false ? `${plantType}` : "Köszi, eleget láttam, csukd be";
 
     return (
-        <div className="plantType-container">
+        <div>
             <button className="plantTypeBtn" onClick={setShowOrHidePlantType}>
                 {showPlantTypeText}
             </button>

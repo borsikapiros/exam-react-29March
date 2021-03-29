@@ -5,9 +5,15 @@ export default function PlantItem(props) {
         <div className="specimen-container">
             <h4>{specimen.name}</h4>
             <div className="specimen-details">
-                <p>Virágzás hónapja: {specimen.month}</p>
-                <p>Virág színe: {specimen.color}</p>
-                <p>Virág illata: {specimen.scent}</p>
+                <p>
+                    <strong>Virágzás hónapja:</strong> {specimen.month}
+                </p>
+                <p>
+                    <strong>Virág színe:</strong> {specimen.color}
+                </p>
+                <p>
+                    <strong>Virág illata:</strong> {specimen.scent}
+                </p>
             </div>
         </div>
     );

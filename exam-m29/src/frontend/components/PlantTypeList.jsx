@@ -15,7 +15,7 @@ export default function PlantTypeList(props) {
                 Melyik érdekel leginkább?
             </p>
             <p>Válassz egyet ezek közül:</p>
-            {renderedPlantTypeList}
+            <div className="plantType-container">{renderedPlantTypeList}</div>
         </div>
     );
 }

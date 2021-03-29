@@ -2,4 +2,71 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Merriweather", serif;
+}
+
+h1 {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.main-container {
+    border: 1px solid violet;
+    width: 80vw;
+    margin: auto;
+    text-align: center;
+}
+
+.plantType-container {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 5vh;
+}
+
+.plantTypeBtn {
+    width: 22vw;
+    height: 50px;
+    font-size: 25px;
+    border: 2px solid violet;
+    background-color: pink;
+    color: blueviolet;
+}
+
+.plantitemlist-container {
+    width: 20vw;
+    line-height: 1.5;
+    padding: 20px;
+    text-align: justify;
+}
+
+.search-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.search {
+    width: 8vw;
+    text-align: center;
+    border: 1px solid pink;
+    padding: 10px;
+}
+
+.species-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.specimen-container {
+    border: 1px solid rgb(204, 44, 177);
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.specimen-container h4 {
+    text-align: center;
+    font-size: 20px;
+}
+
+.specimen-details {
+    margin-left: 30px;
 }

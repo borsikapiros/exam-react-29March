@@ -31,7 +31,7 @@ export default function PlantItemList(props) {
     console.log(searchResults);
 
     const renderedSpeciesArray = searchResults.map((specimen) => {
-        if (!specimen) {
+        if (specimen === null) {
             return "Bocs, ilyen növény nincs, próbálj más keresést";
         } else {
             return <PlantItem specimen={specimen} />;
@@ -50,9 +50,7 @@ export default function PlantItemList(props) {
             </p>
             <div className="search-container">
                 <div className="search">
-                    <label htmlFor="month">
-                        Válaszd ki a virágzás hónapját:
-                    </label>
+                    <label htmlFor="month">Virágzás hónapja:</label>
                     <select
                         id="monthselect"
                         name="month"
@@ -65,7 +63,7 @@ export default function PlantItemList(props) {
                     </select>
                 </div>
                 <div className="search">
-                    <label htmlFor="color">Válaszd ki a virág színét:</label>
+                    <label htmlFor="color">Virág színe:</label>
                     <select
                         id="colorselect"
                         name="color"
@@ -79,7 +77,7 @@ export default function PlantItemList(props) {
                     </select>
                 </div>
             </div>
-            <ul>{renderedSpeciesArray}</ul>
+            <div className="species-container">{renderedSpeciesArray}</div>
         </div>
     );
 }
