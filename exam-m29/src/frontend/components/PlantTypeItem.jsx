@@ -20,7 +20,7 @@ export default function PlantTypeItem(props) {
     }
 
     const showPlantTypeText =
-        clicked === false ? `${plantType}` : "Köszi, eleget láttam";
+        clicked === false ? `${plantType}` : "Köszi, eleget láttam, csukd be";
 
     return (
         <div className="plantType-container">

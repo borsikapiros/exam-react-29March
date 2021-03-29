@@ -1,3 +1,1 @@
-export default function PlantItemDetails(props) {
-    
-}
+export default function PlantItemDetails(props) {}
