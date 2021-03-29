@@ -24,7 +24,7 @@ function App() {
       { name: "tulipán", month: "április", color: "piros", scent: "semmilyen" }]
     }
   ]);
-  console.log("data", data);
+  console.log(data);
   return (
     <div className="App">
       <PlantTypeList data={data} />

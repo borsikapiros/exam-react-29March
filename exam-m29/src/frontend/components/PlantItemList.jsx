@@ -36,7 +36,7 @@ export default function PlantItemList(props) {
 
     const renderedSpecies =
         renderedSpeciesArray.length === 0
-            ? "Bocs, ilyen növény nincs, próbálj más keresést"
+            ? "Sajnos ilyen növény nincs, próbálj más keresést!"
             : renderedSpeciesArray;
 
     return (

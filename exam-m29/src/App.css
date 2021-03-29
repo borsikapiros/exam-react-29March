@@ -2,11 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Merriweather", serif;
+    font-family: "Montserrat", serif;
+    color: rgb(104, 21, 160);
 }
 
 .main-container {
-    width: 80vw;
+    width: 85vw;
     min-height: 100vh;
     margin: 0 auto;
     padding: 3vh;
@@ -14,21 +15,28 @@
     background: url("https://www.thespruce.com/thmb/beTlSh1nmXCBTE3gEWBxqgZKo1w=/2121x1193/smart/filters:no_upscale()/springtime-in-english-domestic-garden--1144616496-0ec047960826477bb1a06ea64c3118f8.jpg")
         no-repeat center;
     background-size: cover;
+    color: rgb(104, 21, 160);
 }
 
 .main-text {
     margin: 3vh auto 5vh auto;
     padding: 20px;
-    width: 50vw;
+    width: 45vw;
     border: transparent;
-    background-color: rgba(255, 205, 255, 0.5);
-    color: rgb(104, 21, 160);
+    background-color: rgba(44, 11, 31, 0.5);
+    color: rgb(240, 199, 241);
     border-radius: 2px;
+}
+
+.main-text p {
+    font-size: large;
 }
 
 h1 {
     margin-bottom: 5vh;
+    text-shadow: 1px 1px rgb(240, 199, 241);
 }
+
 .plantType-container {
     display: flex;
     justify-content: space-around;
@@ -36,25 +44,31 @@ h1 {
 }
 
 .plantTypeBtn {
-    width: 22vw;
+    width: 25vw;
     height: 50px;
-    font-size: 25px;
+    font-size: 22px;
     border: transparent;
-    background-color: rgba(255, 205, 225, 0.5);
-    color: blueviolet;
+    background-color: rgba(255, 205, 225, 0.7);
     border-radius: 3px;
+    color: rgb(104, 21, 160);
+    font-family: "Montserrat", serif;
 }
 
 .plantTypeBtn:hover {
-    background-color: rgba(255, 205, 225, 0.8);
+    background-color: rgba(255, 205, 225, 0.9);
     cursor: pointer;
 }
 
 .plantitemlist-container {
-    width: 20vw;
+    margin-top: 10px;
+    width: 23vw;
     line-height: 1.5;
     padding: 20px;
     text-align: justify;
+    border: transparent;
+    background-color: rgba(44, 11, 31, 0.7);
+    color: white;
+    border-radius: 2px;
 }
 
 .search-container {
@@ -67,6 +81,15 @@ h1 {
     text-align: center;
     border: 1px solid pink;
     padding: 10px;
+    border-radius: 2px;
+}
+
+.search select {
+    width: 100px;
+    height: 30px;
+    font-family: "Montserrat", serif;
+    font-size: 15px;
+    background-color: rgba(255, 205, 225, 0.8);
 }
 
 .species-container {
@@ -76,9 +99,12 @@ h1 {
 
 .specimen-container {
     border: 1px solid rgb(204, 44, 177);
+    border-radius: 2px;
     padding: 10px;
     margin-top: 30px;
-    width: 18vw;
+    width: 20vw;
+    background-color: rgba(255, 205, 225, 0.5);
+    color: rgb(49, 5, 78);
 }
 
 .specimen-container h4 {
