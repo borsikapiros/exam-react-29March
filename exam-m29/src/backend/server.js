@@ -4,9 +4,9 @@ const PORT = 8000;
 const gardendata = require("./data/gardendata.json");
 const cors = require("cors");
 
-app.use(cors());
-
 app.use(express.json());
+
+app.use(cors());
 
 app.get("/api/gardendata", (req, res) => {
     res.send(JSON.stringify(gardendata));

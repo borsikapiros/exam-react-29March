@@ -31,7 +31,7 @@ export default function PlantItemList(props) {
     console.log(searchResults);
 
     const renderedSpeciesArray = searchResults.map((specimen) => {
-        return <PlantItem specimen={specimen} />;
+        return <PlantItem specimen={specimen} key={specimen.name} />;
     });
 
     const renderedSpecies =
@@ -46,8 +46,8 @@ export default function PlantItemList(props) {
                 ilyenkor tavasszal, vonzzák a tekinteteket és a méheket is.
             </p>
             <p>
-                Itt láthatod a {plantType} listáját. Tudsz szűrni közöttük virág
-                színe és virágzás ideje alapján:
+                Itt láthatod a {plantType} listáját. Válaszd ki, mikori virágzás
+                és milyen virágszín érdekel:
             </p>
             <div className="search-container">
                 <div className="search">

@@ -3,17 +3,29 @@
         "ptype": "fák", "species": [{ "name": "cseresznye", "month": "április", "color": "rózsaszín", "scent": "semmilyen" },
         { "name": "szilva", "month": "április", "color": "rózsaszín", "scent": "illatos" },
         { "name": "mandula", "month": "március", "color": "fehér", "scent": "illatos" },
+        { "name": "meggy", "month": "április", "color": "fehér", "scent": "semmilyen" },
+        { "name": "juhar", "month": "március", "color": "sárga", "scent": "semmilyen" },
+        { "name": "őszibarack", "month": "április", "color": "sárga", "scent": "semmilyen" },
+        { "name": "körte", "month": "május", "color": "fehér", "scent": "illatos" },
         { "name": "alma", "month": "május", "color": "rózsaszín", "scent": "illatos" }]
     }, {
-        "ptype": "bokrok", "species": [{ "name": "hóbogyó", "month": "november", "color": "fehér", "scent": "semmilyen" },
+        "ptype": "bokrok", "species": [{ "name": "hóbogyó", "month": "március", "color": "fehér", "scent": "semmilyen" },
         { "name": "varjúháj", "month": "április", "color": "sárga", "scent": "büdös" },
-        { "name": "orgona", "month": "május", "color": "lila", "scent": "isteni" },
+        { "name": "orgona", "month": "április", "color": "lila", "scent": "isteni" },
+        { "name": "nyári orgona", "month": "május", "color": "lila", "scent": "isteni" },
+        { "name": "rózsalonc", "month": "május", "color": "piros", "scent": "illatos" },
+        { "name": "lonc", "month": "május", "color": "sárga", "scent": "isteni" },
+        { "name": "iszalag", "month": "május", "color": "rózsaszín", "scent": "semmilyen" },
         { "name": "tűztövis", "month": "április", "color": "piros", "scent": "semmilyen" }]
     },
     {
         "ptype": "virágok", "species": [{ "name": "hóvirág", "month": "február", "color": "fehér", "scent": "büdös" },
         { "name": "jácint", "month": "március", "color": "lila", "scent": "isteni" },
         { "name": "nárcisz", "month": "április", "color": "sárga", "scent": "semmilyen" },
+        { "name": "ibolya", "month": "április", "color": "lila", "scent": "isteni" },
+        { "name": "krókusz", "month": "március", "color": "rózsaszín", "scent": "semmilyen" },
+        { "name": "nárcisz", "month": "április", "color": "sárga", "scent": "semmilyen" },
+        { "name": "kankalin", "month": "május", "color": "sárga", "scent": "semmilyen" },
         { "name": "tulipán", "month": "április", "color": "piros", "scent": "semmilyen" }]
     }
 ]

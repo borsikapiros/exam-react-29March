@@ -4,7 +4,7 @@ export default function PlantTypeList(props) {
     const plantTypes = props.data;
 
     const renderedPlantTypeList = plantTypes.map((plantType) => {
-        return <PlantTypeItem plantType={plantType} />;
+        return <PlantTypeItem plantType={plantType} key={plantType.index} />;
     });
 
     return (
