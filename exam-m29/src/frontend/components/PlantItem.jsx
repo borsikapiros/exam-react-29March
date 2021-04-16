@@ -1,6 +1,10 @@
+//The last component and the last level of the data structure (details of one plant species, rendered if searched)
+
 export default function PlantItem(props) {
+    //save the props
     const specimen = props.specimen;
 
+    //render the details about the plant species
     return (
         <div className="specimen-container">
             <h4>{specimen.name}</h4>

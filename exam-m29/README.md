@@ -9,12 +9,12 @@ The requirements were:
 
  As it's late March and I spent the weekend gardening, I immediately thought of my beloved plants, so I created a JSON about them. It's in Hungarian, but you can see what the app does anyway. 
 
- What you need to do: 
- 1. backend side: install Express, install Cors in /exam-m29/backend
+ What you need to do to make this work after cloning: 
+ 1. backend side: install Express(https://expressjs.com/en/starter/installing.html), install Cors (https://www.npmjs.com/package/cors#installation) in /exam-m29/src/backend
  2. put the following key-value pair in BOTH package.json files (backend and frontend), in "scripts":
  "proxy" : "http://localhost:8000",
  3. install npm in /exam-m29
- 4. /exam-m29/backend: type "node server" in terminal
+ 4. /exam-m29/src/backend: type "node server" in terminal
  5. /exam-m29: type "npm start"
  6. enjoy!
 

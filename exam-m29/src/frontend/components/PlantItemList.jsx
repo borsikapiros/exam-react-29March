@@ -1,14 +1,20 @@
 import { useEffect, useState } from "react";
 import PlantItem from "./PlantItem";
 
+//This component refers to the second level (list of plants in a plant-type) in the data structure. It contains the searching fields, 
+//performs the search and renders the results in the next level component.
+
 export default function PlantItemList(props) {
+    //save the props to variables
     const plantType = props.plantType;
     const species = props.species;
 
+    //set states for the 2 search terms and for the results
     const [monthSearchTerm, setMonthSearchTerm] = useState("");
     const [colorSearchTerm, setColorSearchTerm] = useState("");
     const [searchResults, setSearchResults] = useState([]);
 
+    //save the change handler functions
     const handleMonthChange = (event) => {
         setMonthSearchTerm(event.target.value);
     };
@@ -16,6 +22,7 @@ export default function PlantItemList(props) {
         setColorSearchTerm(event.target.value);
     };
 
+    //if any of the search terms change, filter the species according to the search terms, save the filtered list and set the results to the state
     useEffect(() => {
         function filterSpecies(spec) {
             if (
@@ -28,17 +35,18 @@ export default function PlantItemList(props) {
         setSearchResults(resultArray);
     }, [monthSearchTerm, colorSearchTerm]);
 
-    console.log(searchResults);
-
+      //map the search results and return a rendered list in the next level component
     const renderedSpeciesArray = searchResults.map((specimen) => {
         return <PlantItem specimen={specimen} key={specimen.name} />;
     });
 
+    //if there's no result, return an error message, if not, return the results
     const renderedSpecies =
         renderedSpeciesArray.length === 0
             ? "Sajnos ilyen növény nincs, próbálj más keresést!"
             : renderedSpeciesArray;
 
+    //render the content of the plant types and the two searching methods (both dropdown, calling the change handler functions on change), and the rendered species
     return (
         <div className="plantitemlist-container">
             <p>
